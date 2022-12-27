@@ -5,6 +5,6 @@ def round_up_or_down(transactions, up=True):
     """
     import math
     if up == True:
-        return math.ceil(transactions)
+        return [math.ceil(x) for x in transactions]
     else:
-        return math.floor(transactions)
+        return [math.floor(x) for x in transactions]
