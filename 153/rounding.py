@@ -3,7 +3,8 @@ def round_up_or_down(transactions, up=True):
        If up=True (default) round up, else round down.
        Return a new list of rounded values
     """
+    import math
     if up == True:
-        return int(transactions+1)
+        return math.ceil(transactions)
     else:
-        return int(transactions)
+        return math.floor(transactions)
