@@ -27,4 +27,4 @@ def filter_bites(
     """
     Return the bites dict with bites_done filtered out.
     """
-    return {x for x in Dict if x not in Set}
+    return {x:y for (x,y) in bites.items() if x not in bites_done}
