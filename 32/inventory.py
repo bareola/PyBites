@@ -7,4 +7,3 @@ def duplicate_items(items):
     from copy import deepcopy
     duplicate = deepcopy(items)
     return duplicate
-duplicate_items(items)
