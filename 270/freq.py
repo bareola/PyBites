@@ -6,10 +6,7 @@ def freq_digit(num: int) -> int:
             list_num[i]=1
         else:
             list_num[i]+=1
-    
-    for item, value in list_num.items():
-        if mostFreq == [] or mostFreq[1] < value:
-            mostFreq = [item, value]
-    return int(mostFreq[0])
+    return int(max(list_num, key=list_num.get))
 
-print (freq_digit(199999988231824))
+# def freq_digit(num: int) -> int:
+#     return int(max(str(num), key=str(num).count))
